@@ -47,6 +47,11 @@ public class CacheConfiguration {
             createCache(cm, com.brewing.dudeling.gallery.domain.User.class.getName());
             createCache(cm, com.brewing.dudeling.gallery.domain.Authority.class.getName());
             createCache(cm, com.brewing.dudeling.gallery.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.brewing.dudeling.gallery.domain.Album.class.getName());
+            createCache(cm, com.brewing.dudeling.gallery.domain.Photo.class.getName());
+            createCache(cm, com.brewing.dudeling.gallery.domain.Photo.class.getName() + ".tags");
+            createCache(cm, com.brewing.dudeling.gallery.domain.Tag.class.getName());
+            createCache(cm, com.brewing.dudeling.gallery.domain.Tag.class.getName() + ".photos");
             // jhipster-needle-ehcache-add-entry
         };
     }
